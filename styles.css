@@ -110,7 +110,24 @@ a {
 }
 
 .hero-inner {
-  max-width: 720px;
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 80px);
+}
+
+.hero-visual {
+  line-height: 0;
+}
+
+.hero-visual img {
+  display: block;
+  width: min(300px, 100%);
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--surface);
 }
 
 .eyebrow {
