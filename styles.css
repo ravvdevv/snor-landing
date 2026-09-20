@@ -312,11 +312,6 @@ h1 em {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-  line-height: 0;
 }
 
 .card-media img {
