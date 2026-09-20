@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snor — Private AI that runs on your phone</title>
+  <meta name="description" content="Snor is a local-first AI chat client for Android. Run GGUF models on-device with GPU acceleration, or fall back to cloud APIs when you choose. Your data stays on your device." />
+  <meta property="og:title" content="Snor — Private AI that runs on your phone" />
+  <meta property="og:description" content="Local-first AI chat for Android. On-device GGUF inference, cloud fallback, multimodal. Your data stays on your device." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.jpg" />
+  <link rel="icon" type="image/png" href="assets/appicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Snor home">
+        <span class="brand-mark">S</span>
+        <span class="brand-name">Snor</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#download">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Android · Local-first AI</p>
+        <h1>Private AI&nbsp;that runs on <em>your</em> phone.</h1>
+        <p class="lede">
+          Snor runs GGUF models directly on your device — no internet, no account, no uploads.
+          Cloud models are there when you choose them, never by default.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.3.apk">Download APK</a>
+        </div>
+        <p class="meta">v1.0.3 · Android 8.0+ · ARM64 · ~101&nbsp;MB</p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+      <div class="container">
+        <p class="eyebrow">What it does</p>
+        <h2>Everything on-device. Anything off-device, on your terms.</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Local inference</h3>
+            <p>Download and run GGUF models on your phone with GPU acceleration via Vulkan. No internet required after download.</p>
+          </article>
+          <article class="card">
+            <h3>Cloud fallback</h3>
+            <p>Seamlessly switch to OpenAI, Anthropic, Google Gemini, or Kimi when you need more power. You choose where inference runs.</p>
+          </article>
+          <article class="card">
+            <h3>Multimodal chat</h3>
+            <p>Send text and images in conversations. Vision works with local models (Qwen2-VL) and cloud providers alike.</p>
+          </article>
+          <article class="card">
+            <h3>Persistent sessions</h3>
+            <p>Chats, tasks, and settings live in local storage via Hive. Nothing leaves your device unless you explicitly pick cloud mode.</p>
+          </article>
+          <article class="card">
+            <h3>Smart auto-config</h3>
+            <p>On first launch, Snor reads your device&rsquo;s RAM and sets optimal context size and token limits automatically.</p>
+          </article>
+          <article class="card">
+            <h3>Task workflows</h3>
+            <p>A dedicated task view for structured AI-assisted workflows, alongside free-form chat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section id="privacy" class="privacy">
+      <div class="container privacy-inner">
+        <p class="eyebrow">Privacy</p>
+        <h2>Your data has a boundary: your device.</h2>
+        <div class="privacy-grid">
+          <p>
+            Local inference runs entirely on-device. Chats are stored locally, models are local,
+            and nothing is sent anywhere without an explicit choice.
+          </p>
+          <p>
+            Even in cloud mode, API keys are kept in local storage and transmitted only to the
+            provider&rsquo;s endpoint &mdash; never to Snor, never to a third party.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section id="download" class="download">
+      <div class="container download-inner">
+        <p class="eyebrow">Get Snor</p>
+        <h2>Install on Android</h2>
+        <p class="download-note">
+          Download the APK and sideload it, or install from your file manager.
+          Allow &ldquo;install from unknown sources&rdquo; when prompted.
+        </p>
+        <a class="btn btn-primary btn-large" href="https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.3.apk">Download APK <span class="btn-meta">v1.0.3</span></a>
+        <p class="meta">Signed release build · ~101&nbsp;MB · ARM64 devices</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Snor</span>
+      <span class="muted">Private AI. On your phone.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

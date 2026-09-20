@@ -1,0 +1,3 @@
+# APK is served via Vercel deployment, not GitHub (exceeds 100MB repo limit)
+downloads/
+.vercel
