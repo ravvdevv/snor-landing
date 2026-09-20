@@ -6,7 +6,9 @@
 
 **Private, cross-platform AI chat client for Android.**
 
-Run language models locally on your device, with cloud API fallback when no local model is loaded. Supports OpenAI, Anthropic, Gemini, Kimi, and more.
+Run language models locally on your device, with cloud API fallback when no local model is loaded. Supports OpenRouter, OpenAI, DeepSeek, Google Gemini, NVIDIA, and custom endpoints.
+
+**iOS support is still in development.**
 
 </div>
 
