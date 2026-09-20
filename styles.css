@@ -404,7 +404,7 @@ h1 em {
 
 .hero-inner {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 24px;
   }
 
   .hero-visual {
@@ -413,7 +413,7 @@ h1 em {
   }
 
   .hero-visual img {
-    max-width: 220px;
+    max-width: 120px;
   }
 
   h1 {
