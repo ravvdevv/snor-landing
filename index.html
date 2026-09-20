@@ -20,7 +20,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Snor home">
-        <span class="brand-mark">S</span>
+        <img class="brand-mark" src="assets/logo.jpg" alt="Snor logo" width="30" height="30" />
         <span class="brand-name">Snor</span>
       </a>
       <nav class="nav" aria-label="Primary">
@@ -36,7 +36,7 @@
     <section class="hero">
       <div class="container hero-inner">
         <p class="eyebrow">Android · Local-first AI</p>
-        <h1>Private AI&nbsp;that runs on <em>your</em> phone.</h1>
+        <h1>Private AI that runs on <em>your</em> phone.</h1>
         <p class="lede">
           Snor runs GGUF models directly on your device — no internet, no account, no uploads.
           Cloud models are there when you choose them, never by default.
@@ -44,7 +44,7 @@
         <div class="hero-actions">
           <a class="btn btn-primary" href="https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.3.apk">Download APK</a>
         </div>
-        <p class="meta">v1.0.3 · Android 8.0+ · ARM64 · ~101&nbsp;MB</p>
+        <p class="meta">No account · No cloud by default</p>
       </div>
     </section>
 
@@ -55,26 +55,52 @@
         <h2>Everything on-device. Anything off-device, on your terms.</h2>
         <div class="grid">
           <article class="card">
+            <figure class="card-media">
+              <img src="assets/img/thinking.gif" alt="On-device inference showing a thinking indicator" width="50" height="50" loading="lazy" />
+            </figure>
             <h3>Local inference</h3>
             <p>Download and run GGUF models on your phone with GPU acceleration via Vulkan. No internet required after download.</p>
           </article>
           <article class="card">
+            <figure class="card-media">
+              <img src="assets/img/loading_screen.gif" alt="Cloud fallback loading screen" width="158" height="106" loading="lazy" />
+            </figure>
             <h3>Cloud fallback</h3>
-            <p>Seamlessly switch to OpenAI, Anthropic, Google Gemini, or Kimi when you need more power. You choose where inference runs.</p>
+            <p>Seamlessly switch to OpenAI, Anthropic, Google Gemini, DeepSeek, OpenRouter, or NVIDIA NIM when you need more power. You choose where inference runs.</p>
+            <div class="provider-logos">
+              <img src="assets/logo/openai_dark.svg" alt="OpenAI">
+              <img src="assets/logo/anthropic_dark.svg" alt="Anthropic">
+              <img src="assets/logo/google-gemini.svg" alt="Google Gemini">
+              <img src="assets/logo/deepseek.svg" alt="DeepSeek">
+              <img src="assets/logo/openrouter_dark.svg" alt="OpenRouter">
+              <img src="assets/logo/nvidia_dark.svg" alt="NVIDIA NIM">
+            </div>
           </article>
           <article class="card">
+            <figure class="card-media">
+              <img src="assets/img/suprise.gif" alt="Multimodal chat surprise reaction" width="100" height="100" loading="lazy" />
+            </figure>
             <h3>Multimodal chat</h3>
             <p>Send text and images in conversations. Vision works with local models (Qwen2-VL) and cloud providers alike.</p>
           </article>
           <article class="card">
+            <figure class="card-media">
+              <img src="assets/img/idle.gif" alt="Idle chat screen from persistent sessions" width="224" height="224" loading="lazy" />
+            </figure>
             <h3>Persistent sessions</h3>
             <p>Chats, tasks, and settings live in local storage via Hive. Nothing leaves your device unless you explicitly pick cloud mode.</p>
           </article>
           <article class="card">
+            <figure class="card-media">
+              <img src="assets/img/boo.gif" alt="Smart auto-config booting and configuring" width="78" height="71" loading="lazy" />
+            </figure>
             <h3>Smart auto-config</h3>
             <p>On first launch, Snor reads your device&rsquo;s RAM and sets optimal context size and token limits automatically.</p>
           </article>
           <article class="card">
+            <figure class="card-media">
+              <img src="assets/img/waving.gif" alt="Task workflows waving hello" width="500" height="507" loading="lazy" />
+            </figure>
             <h3>Task workflows</h3>
             <p>A dedicated task view for structured AI-assisted workflows, alongside free-form chat.</p>
           </article>
@@ -86,7 +112,7 @@
     <section id="privacy" class="privacy">
       <div class="container privacy-inner">
         <p class="eyebrow">Privacy</p>
-        <h2>Your data has a boundary: your device.</h2>
+        <h2>Nothing leaves your device.</h2>
         <div class="privacy-grid">
           <p>
             Local inference runs entirely on-device. Chats are stored locally, models are local,

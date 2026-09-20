@@ -72,15 +72,11 @@ a {
 .brand-mark {
   width: 30px;
   height: 30px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--accent);
-  color: #fff;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 18px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
   border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .brand-name {
@@ -133,6 +129,7 @@ h1 {
   font-size: clamp(40px, 7vw, 72px);
   line-height: 1.08;
   letter-spacing: -0.01em;
+  text-wrap: balance;
 }
 
 h1 em {
@@ -146,6 +143,7 @@ h1 em {
   color: var(--muted);
   font-size: 19px;
   line-height: 1.65;
+  text-wrap: pretty;
 }
 
 .hero-actions {
@@ -237,6 +235,7 @@ h1 em {
   font-weight: 400;
   font-size: clamp(28px, 4vw, 40px);
   line-height: 1.2;
+  text-wrap: balance;
 }
 
 .grid {
@@ -271,6 +270,44 @@ h1 em {
   font-size: 15px;
 }
 
+.provider-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.provider-logos img {
+  height: 22px;
+  width: auto;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.provider-logos img:hover {
+  opacity: 1;
+}
+
+.card-media {
+  margin: 0 0 18px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  line-height: 0;
+}
+
+.card-media img {
+  display: block;
+  max-width: 100%;
+  max-height: 96px;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+}
+
 /* Privacy ---------------------------------------------------------------- */
 
 .privacy {
@@ -290,6 +327,7 @@ h1 em {
   margin: 0;
   color: var(--muted);
   font-size: 16px;
+  text-wrap: pretty;
 }
 
 /* Download ---------------------------------------------------------------- */
