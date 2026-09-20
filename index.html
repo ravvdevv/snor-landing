@@ -25,6 +25,7 @@
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
         <a href="#privacy">Privacy</a>
         <a href="#download">Download</a>
       </nav>
@@ -109,6 +110,58 @@
             <h3>Task workflows</h3>
             <p>A dedicated task view for structured AI-assisted workflows, alongside free-form chat.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="how">
+      <div class="container">
+        <p class="eyebrow">How it works</p>
+        <h2>One message, two engines. You pick the route.</h2>
+        <div class="flow">
+          <div class="flow-box flow-narrow">
+            <span class="flow-tag">1</span>
+            <h3>Type a message</h3>
+            <p>Prompts start from a single input box and stream back into the same conversation.</p>
+          </div>
+
+          <div class="flow-link" aria-hidden="true"></div>
+
+          <div class="flow-split" aria-hidden="true">
+            <span class="c-in"></span>
+            <span class="c-rail"></span>
+            <span class="c-out c-out-left"></span>
+            <span class="c-out c-out-right"></span>
+          </div>
+
+          <div class="flow-branches">
+            <article class="flow-box">
+              <span class="flow-badge flow-badge-local">Local</span>
+              <h3>GGUF model on-device</h3>
+              <p>Runs with GPU acceleration via Vulkan after a one-time download. No internet required.</p>
+            </article>
+            <article class="flow-box">
+              <span class="flow-badge flow-badge-cloud">Cloud</span>
+              <h3>Cloud model API</h3>
+              <p>OpenAI, Anthropic, Gemini, DeepSeek, OpenRouter, or NVIDIA&nbsp;NIM. Used only when you pick a provider.</p>
+            </article>
+          </div>
+
+          <div class="flow-merge" aria-hidden="true">
+            <span class="c-in c-in-left"></span>
+            <span class="c-in c-in-right"></span>
+            <span class="c-rail"></span>
+            <span class="c-out"></span>
+          </div>
+
+          <div class="flow-link" aria-hidden="true"></div>
+
+          <div class="flow-box flow-narrow">
+            <span class="flow-tag">2</span>
+            <h3>Response streams back</h3>
+            <p>Answers land in the same chat &mdash; local data stays on-device, cloud calls go only to the endpoint you chose.</p>
+          </div>
         </div>
       </div>
     </section>

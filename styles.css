@@ -242,6 +242,7 @@ h1 em {
 }
 
 .features h2,
+.how h2,
 .privacy h2,
 .download h2 {
   margin: 0 0 48px;
@@ -321,6 +322,175 @@ h1 em {
   width: auto;
   height: auto;
   border-radius: 6px;
+}
+
+/* How it works ---------------------------------------------------------- */
+
+.how {
+  padding: 96px 0;
+}
+
+.how h2 {
+  margin-bottom: 16px;
+}
+
+.how .eyebrow {
+  margin-bottom: 12px;
+}
+
+.how .container > h2 {
+  margin-bottom: 72px;
+}
+
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flow-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 28px;
+}
+
+.flow-box h3 {
+  margin: 4px 0 0;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.flow-box p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  max-width: 360px;
+}
+
+.flow-narrow {
+  max-width: 460px;
+}
+
+.flow-tag {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.flow-link {
+  position: relative;
+  width: 2px;
+  height: 48px;
+  background: var(--border);
+}
+
+.flow-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  transform: translateX(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid var(--accent);
+}
+
+.flow-split,
+.flow-merge {
+  position: relative;
+  width: 2px;
+  height: 48px;
+  background: transparent;
+}
+
+.flow-split .c-in,
+.flow-merge .c-in,
+.flow-merge .c-out {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 24px;
+  background: var(--border);
+}
+
+.flow-split .c-rail,
+.flow-merge .c-rail {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--border);
+}
+
+.flow-split .c-out {
+  position: absolute;
+  top: 26px;
+  width: 2px;
+  height: 22px;
+  background: var(--border);
+}
+
+.flow-split .c-out-left {
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.flow-split .c-out-right {
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+.flow-merge .c-in-left {
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.flow-merge .c-in-right {
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+.flow-branches {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+.flow-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.flow-badge-local {
+  background: var(--accent);
+  color: #fff;
+}
+
+.flow-badge-cloud {
+  border: 1px solid var(--accent);
+  color: var(--accent);
 }
 
 /* Privacy ---------------------------------------------------------------- */
@@ -417,7 +587,7 @@ h1 em {
     padding: 72px 0 64px;
   }
 
-.hero-inner {
+  .hero-inner {
     grid-template-columns: 1fr;
     gap: 24px;
   }
@@ -441,9 +611,53 @@ h1 em {
     margin-bottom: 32px;
   }
   .features,
+  .how,
   .privacy,
   .download {
     padding: 64px 0;
+  }
+
+  .how .container > h2 {
+    margin-bottom: 56px;
+  }
+
+  .flow-link {
+    height: 40px;
+  }
+
+  .flow-split,
+  .flow-merge {
+    height: 40px;
+  }
+
+  .flow-split span,
+  .flow-merge span {
+    display: none;
+  }
+
+  .flow-split::before,
+  .flow-merge::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: var(--border);
+  }
+
+  .flow-branches {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .flow-branches .flow-box:not(:last-child)::after {
+    content: "";
+    width: 2px;
+    height: 16px;
+    margin: 4px auto 0;
+    background: var(--border);
   }
 
   .nav {
