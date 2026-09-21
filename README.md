@@ -9,14 +9,13 @@
 Run language models locally on your device, with cloud API fallback when no local model is loaded. Supports OpenRouter, OpenAI, DeepSeek, Google Gemini, NVIDIA, and custom endpoints.
 
 <div>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo/openrouter_dark.png"><img src="assets/logo/openrouter.png" alt="OpenRouter" height="28"></picture>&nbsp;
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo/openai_dark.png"><img src="assets/logo/openai.png" alt="OpenAI" height="28"></picture>&nbsp;
+  <img src="assets/logo/openrouter.png" alt="OpenRouter" height="28">&nbsp;
+  <img src="assets/logo/openai_dark.png" alt="OpenAI" height="28">&nbsp;
   <img src="assets/logo/deepseek.png" alt="DeepSeek" height="28">&nbsp;
   <img src="assets/logo/google-gemini.png" alt="Google Gemini" height="28">&nbsp;
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo/nvidia_dark.png"><img src="assets/logo/nvidia.png" alt="NVIDIA" height="28"></picture>&nbsp;
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo/anthropic_dark.png"><img src="assets/logo/anthropic.png" alt="Anthropic" height="28"></picture>
+  <img src="assets/logo/nvidia_dark.png" alt="NVIDIA" height="28">&nbsp;
+  <img src="assets/logo/anthropic_dark.png" alt="Anthropic" height="28">
 </div>
-
 
 **iOS support is still in development.**
 
