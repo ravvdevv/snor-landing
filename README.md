@@ -21,11 +21,6 @@ Run language models locally on your device, with cloud API fallback when no loca
 
 </div>
 
-## Files
-
-* `index.html` / `styles.css` / `script.js` — landing page
-* `assets/` — app icon and Open Graph image
-
 ## Download
 
 * **Android APK (v1.0.3, ~101 MB):** https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.3.apk
