@@ -6,19 +6,7 @@
 
 **Private, cross-platform AI chat client for Android.**
 
-Run language models locally on your device, with cloud API fallback when no local model is loaded. Supports OpenRouter, OpenAI, DeepSeek, Google Gemini, NVIDIA, and custom endpoints.
-
-<div>
-  <img src="assets/logo/openrouter.png" alt="OpenRouter" height="28">&nbsp;
-  <img src="assets/logo/openai_dark.png" alt="OpenAI" height="28">&nbsp;
-  <img src="assets/logo/deepseek.png" alt="DeepSeek" height="28">&nbsp;
-  <img src="assets/logo/google-gemini.png" alt="Google Gemini" height="28">&nbsp;
-  <img src="assets/logo/nvidia_dark.png" alt="NVIDIA" height="28">&nbsp;
-  <img src="assets/logo/anthropic_dark.png" alt="Anthropic" height="28">
-</div>
-
-**iOS support is still in development.**
-
+Run language models locally on your device, with cloud API fallback when no local model is loaded.
 </div>
 
 ## Download
@@ -27,3 +15,18 @@ Run language models locally on your device, with cloud API fallback when no loca
 * Sideload it on any **Android 8.0+ ARM64** device.
 * Enable **"Install from unknown sources"** when prompted.
 * **Live site:** https://snor-landing.vercel.app/
+
+<div align="center">
+
+Supports **cloud AI models** from <strong>OpenRouter, OpenAI, DeepSeek, Google Gemini, NVIDIA, and Anthropic</strong>, plus custom OpenAI-compatible endpoints.
+
+<br><br>
+<img src="assets/logo/openrouter.png" alt="OpenRouter" height="28">&nbsp;&nbsp;
+<img src="assets/logo/openai_dark.png" alt="OpenAI" height="28">&nbsp;&nbsp;
+<img src="assets/logo/deepseek.png" alt="DeepSeek" height="28">&nbsp;&nbsp;
+<img src="assets/logo/google-gemini.png" alt="Google Gemini" height="28">&nbsp;&nbsp;
+<img src="assets/logo/nvidia_dark.png" alt="NVIDIA" height="28">&nbsp;&nbsp;
+<img src="assets/logo/anthropic_dark.png" alt="Anthropic" height="28">
+<br><br>
+<sub>iOS support is currently in development.</sub>
+</div>
