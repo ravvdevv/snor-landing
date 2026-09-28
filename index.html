@@ -4,20 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Snor - Private AI that runs on your phone</title>
-  <meta name="description" content="Snor is a local-first AI chat client for Android. Run GGUF and LiteRT-LM models on-device, expose your phone as an OpenAI-compatible server, or fall back to cloud APIs when you choose. Your data stays on your device." />
+  <meta name="description" content="Snor is a 100% offline AI chat for Android. Run GGUF (Q4_K_M, Q5_K_M) and LiteRT-LM models on-device with Vulkan GPU acceleration. No account, no internet required." />
   <meta property="og:title" content="Snor - Private AI that runs on your phone" />
   <meta property="og:site_name" content="Snor" />
   <meta property="og:title" content="Snor - Private AI that runs on your phone" />
   <meta property="og:site_name" content="Snor" />
   <meta property="og:description" content="Local-first AI chat for Android. On-device GGUF and LiteRT-LM inference, phone-as-an-API server mode, cloud fallback, multimodal. Your data stays on your device." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://snor-landing.vercel.app/" />
+  <meta property="og:url" content="https://snor.site/" />
   <meta property="og:image" content="assets/logo.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Snor - Private AI that runs on your phone" />
   <meta name="twitter:description" content="Local-first AI chat for Android. On-device GGUF and LiteRT-LM inference, phone-as-an-API server mode, cloud fallback, multimodal. Your data stays on your device." />
   <meta name="twitter:image" content="assets/logo.jpg" />
   <meta name="theme-color" content="#0e1618" />
+  <link rel="canonical" href="https://snor.site/" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -34,6 +35,38 @@
     },
     "downloadUrl": "https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.4.apk",
     "sameAs": "https://github.com/ravvdevv/snor-landing"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does Snor work without internet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Snor runs GGUF and LiteRT-LM models completely on-device. No internet connection is required for local inference after the initial app and model download."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What GGUF models are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Snor supports GGUF models with Vulkan GPU acceleration. Tested models include Phi-3, TinyLlama, Gemma 2B, and various Llama 3 variants in Q4_K_M and Q5_K_M quantization levels."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data private with Snor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Your chats, settings, and models remain on your device unless you explicitly choose to use cloud API fallback. Even in cloud mode, API keys are stored locally and transmitted only to the chosen provider."
+        }
+      }
+    ]
   }
   </script>
   <link rel="icon" type="image/png" sizes="512x512" href="assets/appicon.png" />
