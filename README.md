@@ -11,7 +11,7 @@ Run language models locally on your device, with cloud API fallback when no loca
 
 ## Download
 
-* **Android APK (v1.0.4, ARM64 recommended, ~105.7 MB):** https://github.com/ravvdevv/snor-landing/releases/latest/download/app-arm64-v8a-release.apk
+* **Android APK (v1.0.4, ARM64 recommended, ~105.7 MB):** https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.4.apk
 * **Other ABIs:** [armeabi-v7a](https://github.com/ravvdevv/snor-landing/releases/latest/download/app-armeabi-v7a-release.apk) (~37.7 MB) · [x86_64](https://github.com/ravvdevv/snor-landing/releases/latest/download/app-x86_64-release.apk) (~50.5 MB)
 * Pick the APK matching your device ABI on any **Android 8.0+** device.
 * Enable **"Install from unknown sources"** when prompted.
