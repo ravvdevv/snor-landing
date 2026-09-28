@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Snor — Private AI that runs on your phone</title>
-  <meta name="description" content="Snor is a local-first AI chat client for Android. Run GGUF models on-device with GPU acceleration, or fall back to cloud APIs when you choose. Your data stays on your device." />
+  <meta name="description" content="Snor is a local-first AI chat client for Android. Run GGUF and LiteRT-LM models on-device, expose your phone as an OpenAI-compatible server, or fall back to cloud APIs when you choose. Your data stays on your device." />
   <meta property="og:title" content="Snor — Private AI that runs on your phone" />
-  <meta property="og:description" content="Local-first AI chat for Android. On-device GGUF inference, cloud fallback, multimodal. Your data stays on your device." />
+  <meta property="og:description" content="Local-first AI chat for Android. On-device GGUF and LiteRT-LM inference, phone-as-an-API server mode, cloud fallback, multimodal. Your data stays on your device." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/logo.jpg" />
   <script type="application/ld+json">
@@ -61,7 +61,7 @@
           <p class="eyebrow">Android · Local-first AI</p>
           <h1>Private AI that runs on <em>your</em> phone.</h1>
           <p class="lede">
-            Snor runs GGUF models directly on your device. No internet, no account, no uploads.
+            Snor runs GGUF and LiteRT-LM models directly on your device. No internet, no account, no uploads.
             Cloud models are there when you choose them, never by default.
           </p>
           <div class="hero-actions">
@@ -83,7 +83,14 @@
               <img src="assets/img/thinking.gif" alt="On-device inference showing a thinking indicator" width="50" height="50" loading="lazy" />
             </figure>
             <h3>Local inference</h3>
-            <p>Download and run GGUF models on your phone with GPU acceleration via Vulkan. No internet required after download.</p>
+            <p>Download and run GGUF models with GPU acceleration via Vulkan, or LiteRT-LM <code>.litertlm</code> models on CPU, GPU, or NPU. No internet required after download.</p>
+          </article>
+          <article class="card">
+            <figure class="card-media">
+              <img src="assets/img/loading_screen.gif" alt="Phone serving an OpenAI-compatible API" width="158" height="106" loading="lazy" />
+            </figure>
+            <h3>Phone as an API server</h3>
+            <p>Turn your phone into an OpenAI-compatible endpoint on your local network. Point any client at <code>/v1/chat/completions</code> and stream from a LiteRT-LM model running on-device. Optional ngrok or Cloudflare tunnel when you need reach.</p>
           </article>
           <article class="card">
             <figure class="card-media">
@@ -156,8 +163,8 @@
           <div class="flow-branches">
             <article class="flow-box">
               <span class="flow-badge flow-badge-local">Local</span>
-              <h3>GGUF model on-device</h3>
-              <p>Runs with GPU acceleration via Vulkan after a one-time download. No internet required.</p>
+              <h3>GGUF or LiteRT-LM, on-device</h3>
+              <p>llama.cpp with Vulkan, or LiteRT-LM, after a one-time download. No internet required.</p>
             </article>
             <article class="flow-box">
               <span class="flow-badge flow-badge-cloud">Cloud</span>
@@ -191,7 +198,7 @@
         <h2>Nothing leaves your device.</h2>
         <div class="privacy-grid">
           <p>
-            Local inference runs entirely on-device. Chats are stored locally, models are local,
+            Local inference and the optional LAN server run on-device. Chats are stored locally, models are local,
             and nothing is sent anywhere without an explicit choice.
           </p>
           <p>
