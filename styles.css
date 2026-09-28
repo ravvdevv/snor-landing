@@ -286,6 +286,10 @@ h1 em {
   font-size: 15px;
 }
 
+.card p + p {
+  margin-top: 10px;
+}
+
 .card p code {
   font-family: var(--font-mono);
   font-size: 0.92em;
