@@ -1,0 +1,6 @@
+# robots.txt for Snor
+# Allow all crawlers full access
+
+User-agent: *
+Allow: /
+Sitemap: https://snor.site/sitemap.xml
