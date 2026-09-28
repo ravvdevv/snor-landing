@@ -575,6 +575,51 @@ h1 em {
   outline-offset: 2px;
 }
 
+/* Error 404 --------------------------------------------------------------- */
+
+.error-404 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(1200px 500px at 75% -10%, var(--accent-soft), transparent 60%),
+    var(--bg);
+}
+
+.error-404 .container {
+  text-align: center;
+  padding: 48px;
+}
+
+.error-404 .hero-visual img {
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.error-404 h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(32px, 6vw, 48px);
+  margin: 0 0 24px;
+  letter-spacing: -0.01em;
+}
+
+.error-404 .lede {
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.65;
+  max-width: 560px;
+  margin: 0 auto 32px;
+}
+
+.error-404 .hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
