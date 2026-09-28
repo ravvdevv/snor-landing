@@ -98,7 +98,7 @@ The visual voice is **quiet depth**. The page reads as a calm, dark surface — 
 
 The North Star is **The Submersible Console**: a dark, measurement-conscious control surface that feels engineered, self-contained, and trustworthy — the physical opposite of the noisy "keep your data in the cloud" sites it competes against. The user should feel the page itself is proof that the product keeps things close and quiet.
 
-Three product truths anchor the copy and layout: **local-first privacy** (on-device GGUF inference, no account), **cloud on your terms** (explicit opt-in), and **a real, shippable build** (v1.0.3, Android 8.0+, ARM64, ~101 MB — a download link, not a wishlist).
+Three product truths anchor the copy and layout: **local-first privacy** (on-device GGUF inference, no account), **cloud on your terms** (explicit opt-in), and **a real, shippable build** (v1.0.4, Android 8.0+, ARM64, ~105.7 MB — a download link, not a wishlist).
 
 **Key Characteristics:**
 - Quiet depth: a composed, dark console surface, not a shouting marketing screen.
@@ -136,7 +136,7 @@ Type does the emotional work while color stays flat. Two voices:
 
 **Body — system sans.** One stack throughout UI copy, meta, nav, and buttons: `system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif`. Body runs at 1rem/1.6; the lead paragraph is 19px/1.65. It stays invisible and legible, letting the serif headline carry the personality.
 
-**Mono — only where measurement belongs.** The version meta line (`v1.0.3 · Android 8.0+ · ARM64 · ~101 MB`) and technical footnotes render in `ui-monospace, 'SF Mono', Menlo, Consolas`. This is the "console" in the North Star: a machine-readable fact, not marketing.
+**Mono — only where measurement belongs.** The version meta line (`v1.0.4 · Android 8.0+ · ARM64 · ~105.7 MB`) and technical footnotes render in `ui-monospace, 'SF Mono', Menlo, Consolas`. This is the "console" in the North Star: a machine-readable fact, not marketing.
 
 **The Three-Voices Rule.** Serif declares, sans explains, mono measures — each stays in its lane.
 
