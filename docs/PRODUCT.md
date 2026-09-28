@@ -16,7 +16,7 @@ Snor is a local-first AI assistant for Android. Success means the user gets genu
 
 ## Positioning
 
-True on-device GGUF inference over the Vulkan GPU — the mechanism a cloud-only competitor could not truthfully copy. Cloud is an optional, explicit opt-in, not the default path.
+True on-device GGUF inference over the Vulkan GPU  -  the mechanism a cloud-only competitor could not truthfully copy. Cloud is an optional, explicit opt-in, not the default path.
 
 ## Operating Context
 
