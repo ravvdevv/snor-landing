@@ -15,7 +15,7 @@ Key Features:
 
 Technical Details:
 - Platform: Android 8.0+
-- APK size: ~105.7 MB (ARM64 version)
+- APK size: ~82.5 MB (ARM64 version)
 - Local inference engines: llama.cpp (for GGUF), LiteRT (for LiteRT-LM)
 - GPU acceleration: Vulkan for GGUF models
 - Storage: Hive for local persistence of chats, tasks, settings
@@ -23,7 +23,7 @@ Technical Details:
 
 Important URLs:
 - Homepage: https://snor.site/
-- Latest APK download: https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.4.apk
+- Latest APK download: https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.5.apk
 - GitHub repository: https://github.com/ravvdevv/snor-landing
 - Documentation: https://github.com/ravvdevv/snor-landing/tree/main/docs
 
