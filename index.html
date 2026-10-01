@@ -25,6 +25,7 @@
   <meta name="twitter:image:alt" content="Pixel-art fox mascot sitting with eyes closed and Zs floating above its head" />
   <meta name="theme-color" content="#0e1618" />
   <link rel="canonical" href="https://www.snor.site/" />
+  <link rel="preload" as="image" href="assets/img/idle.webp" type="image/webp" fetchpriority="high" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -158,7 +159,10 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-visual">
-          <img src="assets/img/idle.gif" alt="Pixel-art fox mascot standing idle" width="480" height="480" />
+          <picture>
+            <source srcset="assets/img/idle.webp" type="image/webp" />
+            <img src="assets/img/idle.gif" alt="Pixel-art fox mascot standing idle" width="480" height="480" fetchpriority="high" decoding="async" />
+          </picture>
         </div>
         <div class="hero-copy">
           <p class="eyebrow">Android · Local-first AI</p>
@@ -240,7 +244,10 @@
           </article>
           <article class="card">
             <figure class="card-media">
-              <img src="assets/img/waving.gif" alt="Pixel-art fox sitting and waving" width="500" height="507" loading="lazy" />
+              <picture>
+                <source srcset="assets/img/waving.webp" type="image/webp" />
+                <img src="assets/img/waving.gif" alt="Pixel-art fox sitting and waving" width="500" height="507" loading="lazy" decoding="async" />
+              </picture>
             </figure>
             <h3>Task workflows</h3>
             <p>A dedicated task view for structured AI-assisted workflows, alongside free-form chat.</p>
