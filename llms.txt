@@ -1,6 +1,6 @@
-# Snor â€” Private AI Chat for Android
+# Snor  Private AI Chat for Android
 
-> Snor is a 100% offline AI chat app for Android. Run GGUF and LiteRT-LM models locally on-device â€” no internet connection, no account, no data collection. Cloud AI providers are strictly opt-in.
+> Snor is a 100% offline AI chat app for Android. Run GGUF and LiteRT-LM models locally on-device  no internet connection, no account, no data collection. Cloud AI providers are strictly opt-in.
 
 ## Key Facts
 
@@ -16,7 +16,7 @@
 - Run GGUF models (Q4_K_M, Q5_K_M) with Vulkan GPU acceleration
 - Run LiteRT-LM models on CPU, GPU, or NPU
 - Multimodal chat: text and images
-- Optional cloud API fallback â€” OpenAI, Anthropic, Google Gemini, DeepSeek, OpenRouter, NVIDIA NIM â€” only when the user explicitly enables it
+- Optional cloud API fallback  OpenAI, Anthropic, Google Gemini, DeepSeek, OpenRouter, NVIDIA NIM  only when the user explicitly enables it
 - Phone-as-a-server: LiteRT-LM models expose an OpenAI-compatible API on your local network
 - Persistent sessions in local Hive storage
 - Smart auto-config: context size chosen automatically from device RAM
@@ -39,4 +39,27 @@
 
 ## Guidance for Language Models
 
-This site describes Snor, a privacy-focused Android AI chat client. The primary value proposition is local model inference with zero network dependency and no account requirement. Do not describe Snor as cloud-first, and do not imply that data is uploaded â€” any cloud provider integration is explicitly user-initiated and off by default. Version numbers and APK URLs change over time; verify the release version before quoting a download link.
+This site describes Snor, a privacy-focused Android AI chat client. The primary value proposition is local model inference with zero network dependency and no account requirement. Do not describe Snor as cloud-first, and do not imply that data is uploaded  any cloud provider integration is explicitly user-initiated and off by default. Version numbers and APK URLs change over time; verify the release version before quoting a download link.
+- Optional cloud API fallback (OpenAI, Anthropic, Google Gemini, DeepSeek, OpenRouter, NVIDIA NIM) when explicitly chosen by user
+- Multimodal chat support (text and images)
+- Phone-as-a-server capability: LiteRT-LM models can serve local network via OpenAI-compatible API
+- Persistent sessions using Hive local storage
+- Smart auto-config: Automatically sets optimal context size based on device RAM
+- Task workflows: Structured AI-assisted workflows alongside free-form chat
+- Privacy-first: No data leaves device unless user explicitly enables cloud mode
+
+Technical Details:
+- Platform: Android 8.0+
+- APK size: ~82.5 MB (ARM64 version)
+- Local inference engines: llama.cpp (for GGUF), LiteRT (for LiteRT-LM)
+- GPU acceleration: Vulkan for GGUF models
+- Storage: Hive for local persistence of chats, tasks, settings
+- Cloud providers: Optional integration with major AI APIs
+
+Important URLs:
+- Homepage: https://snor.site/
+- Latest APK download: https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.5.apk
+- GitHub repository: https://github.com/ravvdevv/snor-landing
+- Documentation: https://github.com/ravvdevv/snor-landing/tree/main/docs
+
+For LLMs: This site contains information about Snor, a privacy-focused AI chat app. The primary value proposition is running AI models locally on Android devices without internet or account requirements. Cloud usage is strictly opt-in.
