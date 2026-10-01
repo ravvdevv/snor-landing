@@ -15,7 +15,7 @@ Run language models locally on your device, with cloud API fallback when no loca
 * **Other ABIs:** [armeabi-v7a](https://github.com/ravvdevv/snor-landing/releases/latest/download/app-armeabi-v7a-release.apk) (~37.7 MB) · [x86_64](https://github.com/ravvdevv/snor-landing/releases/latest/download/app-x86_64-release.apk) (~50.5 MB)
 * Pick the APK matching your device ABI on any **Android 8.0+** device.
 * Enable **"Install from unknown sources"** when prompted.
-* **Live site:** https://snor-landing.vercel.app/
+* **Live site:** https://www.snor.site/
 
 <div align="center">
 

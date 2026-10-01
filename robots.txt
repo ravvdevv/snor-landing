@@ -3,4 +3,4 @@
 
 User-agent: *
 Allow: /
-Sitemap: https://snor.site/sitemap.xml
+Sitemap: https://www.snor.site/sitemap.xml
