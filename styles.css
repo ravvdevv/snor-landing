@@ -6,6 +6,7 @@
   --text: #f5f6f6;
   --muted: #a1a8aa;
   --accent: #2c6a75;
+  --accent-text: #56a7b2;
   --accent-soft: rgba(44, 106, 117, 0.12);
   --radius: 10px;
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
@@ -149,7 +150,7 @@ h1 {
 
 h1 em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .lede {
@@ -497,8 +498,8 @@ h1 em {
 }
 
 .flow-badge-cloud {
-  border: 1px solid var(--accent);
-  color: var(--accent);
+  border: 1px solid var(--accent-text);
+  color: var(--accent-text);
 }
 
 /* Privacy ---------------------------------------------------------------- */
@@ -571,7 +572,7 @@ h1 em {
 /* Focus / a11y ------------------------------------------------------------ */
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--accent-text);
   outline-offset: 2px;
 }
 
