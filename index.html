@@ -4,70 +4,127 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
-  <title>Snor - Private AI that runs on your phone</title>
-  <meta name="description" content="Snor is a 100% offline AI chat for Android. Run GGUF (Q4_K_M, Q5_K_M) and LiteRT-LM models on-device with Vulkan GPU acceleration. No account, no internet required." />
-  <meta property="og:title" content="Snor - Private AI that runs on your phone" />
+  <title>Snor — Private Offline AI Chat App for Android</title>
+  <meta name="description" content="Run GGUF and LiteRT-LM AI models 100% offline on your Android phone. No account, no internet, no data leaves your device. Free download." />
+  <meta property="og:title" content="Snor — Private Offline AI Chat App for Android" />
   <meta property="og:site_name" content="Snor" />
   <meta property="og:description" content="Local-first AI chat for Android. On-device GGUF and LiteRT-LM inference, phone-as-an-API server mode, cloud fallback, multimodal. Your data stays on your device." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://snor.site/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://www.snor.site/" />
   <meta property="og:image" content="https://www.snor.site/assets/logo.jpg" />
+  <meta property="og:image:secure_url" content="https://www.snor.site/assets/logo.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="736" />
+  <meta property="og:image:height" content="736" />
+  <meta property="og:image:alt" content="Pixel-art fox mascot sitting with eyes closed and Zs floating above its head" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Snor - Private AI that runs on your phone" />
+  <meta name="twitter:title" content="Snor — Private Offline AI Chat App for Android" />
   <meta name="twitter:description" content="Local-first AI chat for Android. On-device GGUF and LiteRT-LM inference, phone-as-an-API server mode, cloud fallback, multimodal. Your data stays on your device." />
   <meta name="twitter:image" content="https://www.snor.site/assets/logo.jpg" />
+  <meta name="twitter:image:alt" content="Pixel-art fox mascot sitting with eyes closed and Zs floating above its head" />
   <meta name="theme-color" content="#0e1618" />
   <link rel="canonical" href="https://www.snor.site/" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Snor",
-    "description": "Snor is a 100% offline AI chat for Android. Run GGUF (Q4_K_M, Q5_K_M) and LiteRT-LM models on-device with Vulkan GPU acceleration. No account, no internet required.",
-    "applicationCategory": "UtilitiesApplication",
-    "operatingSystem": "Android",
-    "softwareVersion": "1.0.5",
-    "image": "https://snor.site/assets/logo.jpg",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "fileSize": "82.5 MB",
-      "architecture": "ARM64 (arm64-v8a)",
-      "availableOffline": true
-    },
-    "downloadUrl": "https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.5.apk",
-    "sameAs": "https://github.com/ravvdevv/snor-landing"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Does Snor work without internet?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, Snor runs GGUF and LiteRT-LM models completely on-device. No internet connection is required for local inference after the initial app and model download."
-        }
+        "@type": "Organization",
+        "@id": "https://www.snor.site/#org",
+        "name": "Snor",
+        "url": "https://www.snor.site/",
+        "logo": "https://www.snor.site/assets/logo.jpg",
+        "sameAs": ["https://github.com/ravvdevv/snor-landing"]
       },
       {
-        "@type": "Question",
-        "name": "What GGUF models are supported?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Snor supports GGUF models with Vulkan GPU acceleration. Tested models include Phi-3, TinyLlama, Gemma 2B, and various Llama 3 variants in Q4_K_M and Q5_K_M quantization levels."
-        }
+        "@type": "SoftwareApplication",
+        "@id": "https://www.snor.site/#app",
+        "name": "Snor",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "AI Chat Client",
+        "operatingSystem": "Android 8.0 or later",
+        "softwareVersion": "1.0.5",
+        "image": "https://www.snor.site/assets/logo.jpg",
+        "downloadUrl": "https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.5.apk",
+        "installUrl": "https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.5.apk",
+        "softwareRequirements": "Android 8.0+ (API 26). Vulkan-capable GPU recommended for GGUF models.",
+        "featureList": [
+          "100% offline on-device inference",
+          "GGUF (Q4_K_M, Q5_K_M) with Vulkan GPU acceleration",
+          "LiteRT-LM models on CPU, GPU or NPU",
+          "OpenAI-compatible /v1/chat/completions endpoint on your local network",
+          "Opt-in cloud fallback to OpenAI, Anthropic, Gemini, DeepSeek, OpenRouter or NVIDIA NIM",
+          "Multimodal chat with text and images",
+          "Persistent local sessions",
+          "Automatic context sizing based on device RAM"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "operatingSystem": "Android 8.0+",
+          "fileSize": "82.5 MB",
+          "installUrl": "https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.5.apk"
+        },
+        "author": { "@id": "https://www.snor.site/#org" },
+        "publisher": { "@id": "https://www.snor.site/#org" },
+        "sameAs": ["https://github.com/ravvdevv/snor-landing"]
       },
       {
-        "@type": "Question",
-        "name": "Is my data private with Snor?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. Your chats, settings, and models remain on your device unless you explicitly choose to use cloud API fallback. Even in cloud mode, API keys are stored locally and transmitted only to the chosen provider."
-        }
+        "@type": "FAQPage",
+        "@id": "https://www.snor.site/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Snor work without internet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Snor runs GGUF and LiteRT-LM models completely on-device. No internet connection is required for local inference after the initial app and model download."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What GGUF models are supported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Snor supports GGUF models with Vulkan GPU acceleration. Tested models include Phi-3, TinyLlama, Gemma 2B, and various Llama 3 variants in Q4_K_M and Q5_K_M quantization levels."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my data private with Snor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Your chats, settings, and models remain on your device unless you explicitly choose to use cloud API fallback. Even in cloud mode, API keys are stored locally and transmitted only to the chosen provider."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I install Snor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Download the APK from snor.site and open it on any Android 8.0 or newer device, then allow installs from your file manager when prompted. Pick the build that matches your device ABI: ARM64, armeabi-v7a or x86_64."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Snor send my prompts to a server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not unless you turn on cloud mode yourself. Local inference runs entirely on your device. In cloud mode, requests go directly from your device to the provider you selected, and your API key is stored locally."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use my phone as a local AI server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Any LiteRT-LM model loaded in Snor can expose an OpenAI-compatible /v1/chat/completions endpoint on your local network, so other apps and tools on your Wi-Fi can use it. An ngrok or Cloudflare tunnel is optional if you need access from outside your network."
+            }
+          }
+        ]
       }
     ]
   }
@@ -83,13 +140,14 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Snor home">
-        <img class="brand-mark" src="assets/logo.jpg" alt="Snor logo" width="30" height="30" />
+        <img class="brand-mark" src="assets/logo.jpg" alt="" width="30" height="30" />
         <span class="brand-name">Snor</span>
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="#features">Features</a>
         <a href="#how-it-works">How it works</a>
         <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
         <a href="#download">Download</a>
       </nav>
     </div>
@@ -100,7 +158,7 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-visual">
-          <img src="assets/img/idle.gif" alt="Snor idle animation" width="480" height="480" />
+          <img src="assets/img/idle.gif" alt="Pixel-art fox mascot standing idle" width="480" height="480" />
         </div>
         <div class="hero-copy">
           <p class="eyebrow">Android · Local-first AI</p>
@@ -129,18 +187,6 @@
             <p class="meta muted">Signed release build · ~82.5&nbsp;MB · ARM64 (arm64-v8a) · <a href="https://github.com/ravvdevv/snor-landing/releases/latest/download/app-armeabi-v7a-release.apk">armeabi-v7a</a> · <a href="https://github.com/ravvdevv/snor-landing/releases/latest/download/app-x86_64-release.apk">x86_64</a></p>
           </div>
         </section>
-    <section id="download" class="download">
-      <div class="container download-inner">
-        <p class="eyebrow">Get Snor</p>
-        <h2>Install on Android</h2>
-        <p class="download-note">
-          Download the APK and sideload it, or install from your file manager.
-          Allow &ldquo;install from unknown sources&rdquo; when prompted.
-        </p>
-        <a class="btn btn-primary btn-large" href="https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.5.apk">Download APK <span class="btn-meta">v1.0.5</span></a>
-        <p class="meta muted">Signed release build · ~82.5&nbsp;MB · ARM64 (arm64-v8a) · <a href="https://github.com/ravvdevv/snor-landing/releases/latest/download/app-armeabi-v7a-release.apk">armeabi-v7a</a> · <a href="https://github.com/ravvdevv/snor-landing/releases/latest/download/app-x86_64-release.apk">x86_64</a></p>
-      </div>
-    </section>
 
         <!-- FEATURES -->
         <section id="features" class="features">
@@ -150,7 +196,7 @@
         <div class="grid">
           <article class="card">
             <figure class="card-media">
-              <img src="assets/img/thinking.gif" alt="On-device inference showing a thinking indicator" width="50" height="50" loading="lazy" />
+              <img src="assets/img/thinking.gif" alt="Pixel-art fox dozing with Zs above its head" width="50" height="50" loading="lazy" />
             </figure>
             <h3>Local inference</h3>
             <p>Download and run GGUF models with GPU acceleration via Vulkan, or LiteRT-LM <code>.litertlm</code> models on CPU, GPU, or NPU. No internet required after download.</p>
@@ -158,7 +204,7 @@
           </article>
           <article class="card">
             <figure class="card-media">
-              <img src="assets/img/loading_screen.gif" alt="Cloud fallback loading screen" width="158" height="106" loading="lazy" />
+              <img src="assets/img/loading_screen.gif" alt="Pixel-art fox sitting calmly while a cloud request runs" width="158" height="106" loading="lazy" />
             </figure>
             <h3>Cloud fallback</h3>
             <p>Seamlessly switch to OpenAI, Anthropic, Google Gemini, DeepSeek, OpenRouter, or NVIDIA NIM when you need more power. You choose where inference runs.</p>
@@ -173,28 +219,28 @@
           </article>
           <article class="card">
             <figure class="card-media">
-              <img src="assets/img/suprise.gif" alt="Multimodal chat surprise reaction" width="100" height="100" loading="lazy" />
+              <img src="assets/img/suprise.gif" alt="Pixel-art fox holding an open card in a multimodal chat" width="100" height="100" loading="lazy" />
             </figure>
             <h3>Multimodal chat</h3>
             <p>Send text and images in conversations. Vision works with local models (Qwen2-VL) and cloud providers alike.</p>
           </article>
           <article class="card">
             <figure class="card-media">
-              <img src="assets/img/idle.gif" alt="Idle chat screen from persistent sessions" width="224" height="224" loading="lazy" />
+              <img src="assets/img/idle.gif" alt="Pixel-art fox mascot standing idle" width="224" height="224" loading="lazy" />
             </figure>
             <h3>Persistent sessions</h3>
             <p>Chats, tasks, and settings live in local storage via Hive. Nothing leaves your device unless you explicitly pick cloud mode.</p>
           </article>
           <article class="card">
             <figure class="card-media">
-              <img src="assets/img/boo.gif" alt="Smart auto-config booting and configuring" width="78" height="71" loading="lazy" />
+              <img src="assets/img/boo.gif" alt="Pixel-art fox with raised paws during first-launch auto-configuration" width="78" height="71" loading="lazy" />
             </figure>
             <h3>Smart auto-config</h3>
             <p>On first launch, Snor reads your device&rsquo;s RAM and sets optimal context size and token limits automatically.</p>
           </article>
           <article class="card">
             <figure class="card-media">
-              <img src="assets/img/waving.gif" alt="Task workflows waving hello" width="500" height="507" loading="lazy" />
+              <img src="assets/img/waving.gif" alt="Pixel-art fox sitting and waving" width="500" height="507" loading="lazy" />
             </figure>
             <h3>Task workflows</h3>
             <p>A dedicated task view for structured AI-assisted workflows, alongside free-form chat.</p>
@@ -270,23 +316,40 @@
             provider&rsquo;s endpoint &mdash; never to Snor, never to a third party.
           </p>
         </div>
-              </div>
-            </section>
-          </main>
       </div>
     </section>
 
-    <!-- DOWNLOAD -->
-    <section id="download" class="download">
-      <div class="container download-inner">
-        <p class="eyebrow">Get Snor</p>
-        <h2>Install on Android</h2>
-        <p class="download-note">
-          Download the APK and sideload it, or install from your file manager.
-          Allow &ldquo;install from unknown sources&rdquo; when prompted.
-        </p>
-<a class="btn btn-primary btn-large" href="https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.5.apk">Download APK <span class="btn-meta">v1.0.5</span></a>
-    <p class="meta muted">Signed release build · ~82.5&nbsp;MB · ARM64 (arm64-v8a) · <a href="https://github.com/ravvdevv/snor-landing/releases/latest/download/app-armeabi-v7a-release.apk">armeabi-v7a</a> · <a href="https://github.com/ravvdevv/snor-landing/releases/latest/download/app-x86_64-release.apk">x86_64</a></p>
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Does Snor work without internet?</summary>
+            <p>Yes, Snor runs GGUF and LiteRT-LM models completely on-device. No internet connection is required for local inference after the initial app and model download.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What GGUF models are supported?</summary>
+            <p>Snor supports GGUF models with Vulkan GPU acceleration. Tested models include Phi-3, TinyLlama, Gemma 2B, and various Llama 3 variants in Q4_K_M and Q5_K_M quantization levels.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is my data private with Snor?</summary>
+            <p>Absolutely. Your chats, settings, and models remain on your device unless you explicitly choose to use cloud API fallback. Even in cloud mode, API keys are stored locally and transmitted only to the chosen provider.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I install Snor?</summary>
+            <p>Download the APK from snor.site and open it on any Android 8.0 or newer device, then allow installs from your file manager when prompted. Pick the build that matches your device ABI: ARM64, armeabi-v7a or x86_64.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does Snor send my prompts to a server?</summary>
+            <p>Not unless you turn on cloud mode yourself. Local inference runs entirely on your device. In cloud mode, requests go directly from your device to the provider you selected, and your API key is stored locally.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I use my phone as a local AI server?</summary>
+            <p>Yes. Any LiteRT-LM model loaded in Snor can expose an OpenAI-compatible <code>/v1/chat/completions</code> endpoint on your local network, so other apps and tools on your Wi-Fi can use it. An ngrok or Cloudflare tunnel is optional if you need access from outside your network.</p>
+          </details>
+        </div>
       </div>
     </section>
   </main>
