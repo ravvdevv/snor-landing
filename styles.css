@@ -127,11 +127,6 @@ a {
   line-height: 0;
 }
 
-.hero-visual picture {
-  display: block;
-  max-width: 100%;
-}
-
 .hero-visual img {
   display: block;
   width: min(340px, 100%);
