@@ -10,13 +10,13 @@
 - Privacy: chats, settings, and local models remain on-device during local inference. Cloud requests are made only when the user explicitly selects cloud mode and go to the selected provider.
 - Cloud providers: OpenAI, Anthropic, Google Gemini, DeepSeek, OpenRouter, NVIDIA NIM, and compatible endpoints, depending on app configuration.
 - Other capabilities: multimodal text-and-image chat, local sessions, automatic context sizing, task workflows, and a local-network OpenAI-compatible API for supported LiteRT-LM models.
-- Current release referenced by the landing page: v1.0.6. Check the releases page for the latest version and supported APK assets before quoting version-specific details.
+- Current release referenced by the landing page: v1.0.7. Check the releases page for the latest version and supported APK assets before quoting version-specific details.
 
 ## Primary resources
 
 - Homepage: https://www.snor.site/
 - Latest releases: https://github.com/ravvdevv/snor-landing/releases
-- ARM64 v1.0.6 APK: https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.6.apk
+- ARM64 v1.0.7 APK: https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.7.apk
 - Source repository: https://github.com/ravvdevv/snor-landing
 - Product specification: https://github.com/ravvdevv/snor-landing/blob/main/docs/PRODUCT.md
 - Design documentation: https://github.com/ravvdevv/snor-landing/blob/main/docs/DESIGN.md
