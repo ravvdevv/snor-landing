@@ -91,10 +91,12 @@ The page is divided into clear sections:
 5. **Updating GIFs**: Place new animations in `assets/img/` and reference in HTML
 
 ### Deployment Notes
-- The site is configured for Vercel deployment via `.vercel/project.json`
-- All static files are served as-is (no build step)
-- Ensure assets are web-optimized before committing
-- The APK is served via GitHub releases (not stored in repo due to size)
+- Read the repository-root [`deployment.md`](../deployment.md) before publishing releases or deploying production.
+- The site is configured for Vercel deployment via `.vercel/project.json`.
+- All static files are served as-is (no build step).
+- Production deploys from `main` through Vercel's Git integration.
+- APKs are served as GitHub Release assets (not stored in the repository due to size).
+- Keep `index.html`, `README.md`, and `llms.txt` synchronized with the current release and verified asset names.
 
 ### Development Best Practices
 - Keep CSS modifications minimal - reuse existing variables and classes
