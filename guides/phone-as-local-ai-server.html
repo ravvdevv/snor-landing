@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Use an Android Phone as a Local AI Server | Snor</title>
+  <meta name="description" content="Learn how an Android phone can serve local AI inference over your Wi-Fi using an OpenAI-compatible chat completions API.">
+  <link rel="canonical" href="https://www.snor.site/guides/phone-as-local-ai-server.html">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="/" aria-label="Snor home"><img class="brand-mark" src="../assets/logo.jpg" alt="" width="30" height="30"><span class="brand-name">Snor</span></a><nav class="nav" aria-label="Primary"><a href="/#features">Features</a><a href="/#guides">Guides</a><a href="/#download">Download</a></nav></div></header>
+  <main class="container" style="padding-block:4rem;max-width:860px">
+    <p class="eyebrow">Local AI networking</p>
+    <h1>Use an Android phone as a local AI server</h1>
+    <p class="lede">A phone can do more than host a chat UI. When an app exposes a local API, other devices on the same network can send requests to the phone and use its model for inference.</p>
+    <h2>What an OpenAI-compatible API means</h2>
+    <p>Many developer tools already know how to call endpoints such as <code>/v1/chat/completions</code>. An OpenAI-compatible API uses a familiar request and response shape, which can let compatible clients connect without being built specifically for one Android app. Compatibility is not universal: clients may rely on extra endpoints or features that a server does not implement.</p>
+    <h2>How the network path works</h2>
+    <ol><li>Load a supported local model on the Android device.</li><li>Enable the app's local server feature, if available.</li><li>Connect the client computer and phone to the same trusted Wi-Fi network.</li><li>Configure the client with the phone's LAN address, port and API path shown by the server.</li><li>Send a small test prompt before using a larger context or longer generation.</li></ol>
+    <h2>Security basics</h2>
+    <p>A service bound to a network interface can be reachable by other devices on that network. Use a trusted network, avoid exposing an unauthenticated endpoint to the public internet, and disable the server when you do not need it. A tunnel can make a service reachable from outside your LAN, but it also expands the attack surface and should not be enabled casually.</p>
+    <h2>Performance limitations</h2>
+    <p>The phone's RAM, thermals, GPU/NPU support, battery and model size all affect throughput. A LAN API does not make inference faster by itself; it only lets another client submit work to the device. Keep the context modest and test on the hardware you intend to use.</p>
+    <h2>How Snor fits</h2>
+    <p>Snor can expose an OpenAI-compatible <code>/v1/chat/completions</code> endpoint over the local network for supported LiteRT-LM models. The feature is useful when you want a phone to act as a small local inference host for compatible tools, without routing those requests through a hosted AI provider.</p>
+    <p><a class="btn btn-primary" href="https://github.com/ravvdevv/snor-landing/releases/latest">Get Snor from the latest releases</a></p>
+    <h2>Related guides</h2><ul><li><a href="/guides/run-gguf-on-android.html">Run GGUF models on Android</a></li><li><a href="/guides/best-small-models.html">Choose small language models for phones</a></li></ul>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Snor</span><a href="/">Back to Snor</a></div></footer>
+</body>
+</html>
