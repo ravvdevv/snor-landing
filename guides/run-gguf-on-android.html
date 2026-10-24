@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Run GGUF Models on Android | Snor</title>
+  <meta name="description" content="Learn how GGUF quantization, RAM, storage and Vulkan affect running local language models on Android phones.">
+  <link rel="canonical" href="https://www.snor.site/guides/run-gguf-on-android.html">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="/" aria-label="Snor home"><img class="brand-mark" src="../assets/logo.jpg" alt="" width="30" height="30"><span class="brand-name">Snor</span></a><nav class="nav" aria-label="Primary"><a href="/#features">Features</a><a href="/#guides">Guides</a><a href="/#download">Download</a></nav></div></header>
+  <main class="container" style="padding-block:4rem;max-width:860px">
+    <p class="eyebrow">Android local AI guide</p>
+    <h1>How to run GGUF language models on Android</h1>
+    <p class="lede">GGUF is a model file format commonly used with llama.cpp. Running a model locally is possible on many Android devices, but the useful question is not just whether it loads. It is whether your phone has enough memory and compute to run it comfortably.</p>
+    <h2>1. Check RAM and free storage</h2>
+    <p>Model files are only part of the memory budget. Inference also needs space for the runtime, context cache, temporary buffers and Android itself. A model that technically loads may still be slow or cause other apps to be killed. Keep extra storage free for downloads and temporary files.</p>
+    <h2>2. Understand quantization</h2>
+    <p>Quantization stores model weights at lower precision to reduce file size and memory use. Q4 variants are often a practical starting point on phones; Q5 variants can use more memory and may preserve a little more model quality. Exact sizes depend on the model architecture and its tensors, so use the actual file size rather than assuming every model follows one number.</p>
+    <h2>3. Choose a compatible model</h2>
+    <p>Start with a small model and verify its license, architecture, tokenizer and runtime compatibility. Snor supports GGUF models through llama.cpp and Vulkan acceleration, but compatibility and speed vary by model and device. A model listed as supported by a runtime is not a promise that every Android phone will run it well.</p>
+    <h2>4. Expect trade-offs</h2>
+    <ul><li><strong>RAM:</strong> limits the model size and context you can keep active.</li><li><strong>Thermals:</strong> sustained generation may heat the phone and throttle performance.</li><li><strong>GPU support:</strong> Vulkan acceleration depends on the device, drivers and runtime build.</li><li><strong>Battery:</strong> local inference can use substantial power during long sessions.</li></ul>
+    <h2>5. Try Snor</h2>
+    <p>Snor is an Android AI chat app with local GGUF inference through llama.cpp and Vulkan, plus a separate LiteRT-LM engine for supported models. Download the app and model while online; local inference can then work without an internet connection.</p>
+    <p><a class="btn btn-primary" href="https://github.com/ravvdevv/snor-landing/releases/latest">Get Snor from the latest releases</a></p>
+    <h2>Related guides</h2><ul><li><a href="/guides/best-small-models.html">Choosing small language models for phones</a></li><li><a href="/guides/phone-as-local-ai-server.html">Use an Android phone as a local AI server</a></li></ul>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Snor</span><a href="/">Back to Snor</a></div></footer>
+</body>
+</html>
