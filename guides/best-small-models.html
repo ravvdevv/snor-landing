@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Best Small Language Models for Android Phones | Snor</title>
+  <meta name="description" content="Choose small local language models for Android by RAM, quantization, task quality and runtime compatibility.">
+  <link rel="canonical" href="https://www.snor.site/guides/best-small-models.html">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="/" aria-label="Snor home"><img class="brand-mark" src="../assets/logo.jpg" alt="" width="30" height="30"><span class="brand-name">Snor</span></a><nav class="nav" aria-label="Primary"><a href="/#features">Features</a><a href="/#guides">Guides</a><a href="/#download">Download</a></nav></div></header>
+  <main class="container" style="padding-block:4rem;max-width:860px">
+    <p class="eyebrow">Model selection</p>
+    <h1>Choosing small language models for Android phones</h1>
+    <p class="lede">The best local model is the largest model your phone can run reliably for the task you actually have. Bigger is not automatically better when memory pressure, heat and slow generation turn a simple question into a waiting simulator.</p>
+    <h2>Start with the task, not the leaderboard</h2>
+    <p>For short chat, rewriting and basic explanations, a small general-purpose instruct model may be enough. Coding, multilingual reasoning, long documents and vision can need different models and more memory. Evaluate with prompts you care about rather than relying only on benchmark scores.</p>
+    <h2>Use these practical selection rules</h2>
+    <ul><li><strong>Low memory budget:</strong> begin with a smaller parameter count and a Q4 quantization, then test stability.</li><li><strong>More available RAM:</strong> try a higher quantization or larger model only if the app remains responsive.</li><li><strong>Long conversations:</strong> reduce context length if memory use becomes a problem; context cache can be a significant part of the total.</li><li><strong>Vision:</strong> choose a vision-capable model and confirm the runtime supports its architecture and input format.</li><li><strong>Battery and heat:</strong> test several minutes of continuous generation, not just one short prompt.</li></ul>
+    <h2>Model compatibility is a matrix</h2>
+    <p>There is no universal model-to-phone table that remains accurate across devices. Compatibility depends on the model architecture, quantization, runtime version, available memory, GPU drivers and whether the app supports the required tokenizer or vision components. Treat model names as candidates to test, not guaranteed performance tiers.</p>
+    <h2>A simple testing checklist</h2>
+    <ol><li>Download the model from a trustworthy source and review its license.</li><li>Check file size and ensure enough free storage remains.</li><li>Run a short prompt, then a longer prompt with the context you expect to use.</li><li>Watch for crashes, memory warnings, excessive heat and generation stalls.</li><li>Compare answer quality on the same small set of representative tasks.</li></ol>
+    <h2>Run local models with Snor</h2>
+    <p>Snor supports GGUF through llama.cpp with Vulkan acceleration and LiteRT-LM models on supported CPU, GPU or NPU paths. Actual performance varies by phone and model. Download the app and model ahead of time if you plan to use local inference offline.</p>
+    <p><a class="btn btn-primary" href="https://github.com/ravvdevv/snor-landing/releases/latest">Get Snor from the latest releases</a></p>
+    <h2>Related guides</h2><ul><li><a href="/guides/run-gguf-on-android.html">Run GGUF models on Android</a></li><li><a href="/guides/phone-as-local-ai-server.html">Use your phone as a local AI server</a></li></ul>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Snor</span><a href="/">Back to Snor</a></div></footer>
+</body>
+</html>
