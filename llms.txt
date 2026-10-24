@@ -12,11 +12,20 @@
 - Other capabilities: multimodal text-and-image chat, local sessions, automatic context sizing, task workflows, and a local-network OpenAI-compatible API for supported LiteRT-LM models.
 - Current release referenced by the landing page: v1.0.7. Check the releases page for the latest version and supported APK assets before quoting version-specific details.
 
+## Guides and comparisons
+
+- Run GGUF models on Android: https://www.snor.site/guides/run-gguf-on-android.html
+- Use an Android phone as a local AI server: https://www.snor.site/guides/phone-as-local-ai-server.html
+- Choose small local models for Android: https://www.snor.site/guides/best-small-models.html
+- Snor vs PocketPal: https://www.snor.site/compare/snor-vs-pocketpal.html
+
+Runtime compatibility, model availability, and competitor features can change; verify current official release documentation before making version-specific claims.
+
 ## Primary resources
 
 - Homepage: https://www.snor.site/
 - Latest releases: https://github.com/ravvdevv/snor-landing/releases
-- ARM64 v1.0.7 APK: https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.7.apk
+- Download page: https://github.com/ravvdevv/snor-landing/releases/latest
 - Source repository: https://github.com/ravvdevv/snor-landing
 - Product specification: https://github.com/ravvdevv/snor-landing/blob/main/docs/PRODUCT.md
 - Design documentation: https://github.com/ravvdevv/snor-landing/blob/main/docs/DESIGN.md

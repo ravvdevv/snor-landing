@@ -25,7 +25,7 @@
   <meta name="twitter:image:alt" content="Pixel-art fox mascot sitting with eyes closed and Zs floating above its head" />
   <meta name="theme-color" content="#0e1618" />
   <link rel="canonical" href="https://www.snor.site/" />
-  <link rel="preload" as="image" href="assets/img/idle.gif" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/img/idle.webp" fetchpriority="high" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -49,8 +49,8 @@
         "operatingSystem": "Android 8.0 or later",
         "softwareVersion": "1.0.7",
         "image": "https://www.snor.site/assets/logo.jpg",
-        "downloadUrl": "https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.7.apk",
-        "installUrl": "https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.7.apk",
+        "downloadUrl": "https://github.com/ravvdevv/snor-landing/releases/latest",
+        "installUrl": "https://github.com/ravvdevv/snor-landing/releases/latest",
         "softwareRequirements": "Android 8.0+ (API 26). Vulkan-capable GPU recommended for GGUF models.",
         "featureList": [
           "100% offline on-device inference",
@@ -69,7 +69,7 @@
           "availability": "https://schema.org/InStock",
           "operatingSystem": "Android 8.0+",
           "fileSize": "82.6 MB",
-          "installUrl": "https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.7.apk"
+          "installUrl": "https://github.com/ravvdevv/snor-landing/releases/latest"
         },
         "author": { "@id": "https://www.snor.site/#org" },
         "publisher": { "@id": "https://www.snor.site/#org" },
@@ -149,6 +149,7 @@
       <nav class="nav" aria-label="Primary">
         <a href="#features">Features</a>
         <a href="#how-it-works">How it works</a>
+        <a href="#guides">Guides</a>
         <a href="#privacy">Privacy</a>
         <a href="#faq">FAQ</a>
         <a href="#download">Download</a>
@@ -161,7 +162,7 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-visual">
-          <img src="assets/img/idle.gif" alt="Pixel-art fox mascot standing idle" width="480" height="480" fetchpriority="high" decoding="async" />
+          <picture><source srcset="assets/img/idle.webp" type="image/webp" /><img src="assets/img/idle.gif" alt="Pixel-art fox mascot standing idle" width="480" height="480" fetchpriority="high" decoding="async" /></picture>
         </div>
         <div class="hero-copy">
           <p class="eyebrow">Android · Local-first AI</p>
@@ -170,7 +171,7 @@
             Run local AI models on Android with Snor, a private AI chat app for offline use. Chat with GGUF and LiteRT-LM models directly on your device, with no account required. Your conversations stay on-device during local inference. Cloud AI APIs are optional and used only when you choose them.
           </p>
                     <div class="hero-actions">
-            <a class="btn btn-primary" href="https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.7.apk">Download APK</a>
+            <a class="btn btn-primary" href="https://github.com/ravvdevv/snor-landing/releases/latest">Download APK</a>
           </div>
           <p class="meta">No account · No cloud by default</p>
         </div>
@@ -186,7 +187,7 @@
               Download the APK and sideload it, or install from your file manager.
               Allow &ldquo;install from unknown sources&rdquo; when prompted.
             </p>
-            <a class="btn btn-primary btn-large" href="https://github.com/ravvdevv/snor-landing/releases/latest/download/snor-v1.0.7.apk">Download APK <span class="btn-meta">v1.0.7</span></a>
+            <a class="btn btn-primary btn-large" href="https://github.com/ravvdevv/snor-landing/releases/latest">Download APK <span class="btn-meta">v1.0.7</span></a>
             <p class="meta muted">Signed release build · ARM64 (arm64-v8a) · <a href="https://github.com/ravvdevv/snor-landing/releases/latest/download/app-armeabi-v7a-release.apk">armeabi-v7a</a> · <a href="https://github.com/ravvdevv/snor-landing/releases/latest/download/app-x86_64-release.apk">x86_64</a></p>
             <p class="meta muted">v1.0.7 improves native inference safety, prevents overlapping generations, and waits for active inference before releasing model memory.</p>
           </div>
@@ -359,12 +360,27 @@
         </div>
       </div>
     </section>
+
+    <!-- SEO GUIDES -->
+    <section id="guides" class="features">
+      <div class="container">
+        <p class="eyebrow">Learn and build</p>
+        <h2>Practical guides to local AI on Android</h2>
+        <p class="lede">Understand model compatibility, phone hardware, and how to connect local inference to your tools.</p>
+        <div class="grid">
+          <article class="card"><h3><a href="/guides/run-gguf-on-android.html">Run GGUF models on Android</a></h3><p>Learn how quantization, RAM, Vulkan support and context size affect local inference.</p></article>
+          <article class="card"><h3><a href="/guides/phone-as-local-ai-server.html">Turn a phone into a local AI server</a></h3><p>Connect compatible tools over your LAN using an OpenAI-compatible chat API, with practical security notes.</p></article>
+          <article class="card"><h3><a href="/guides/best-small-models.html">Choose small models for phones</a></h3><p>Pick model sizes and quantization based on memory, task quality, thermals and runtime support.</p></article>
+          <article class="card"><h3><a href="/compare/snor-vs-pocketpal.html">Snor vs PocketPal</a></h3><p>Compare workflows and test the differences that matter on your own device.</p></article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <span>© <span id="year">2026</span> Snor</span>
-      <span class="muted">Private AI. On your phone.</span>
+      <span class="muted"><a href="/guides/run-gguf-on-android.html">Guides</a> · <a href="/compare/snor-vs-pocketpal.html">Compare</a> · Private AI. On your phone.</span>
     </div>
   </footer>
 
